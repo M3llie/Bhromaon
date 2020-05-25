@@ -250,17 +250,6 @@ img{
     display: flex;
   }
 
-  &__item {
-    padding-left: 40px;
-    list-style: none;
-    &:last-of-type {
-      padding-right: 0;
-		}
-		&:first-of-type{
-			padding-left: 0;
-			margin-left: 0;
-		}
-  }
   &__logo{
 		font-family: Josefin Sans;
 		font-style: normal;
@@ -283,6 +272,24 @@ img{
 	
   }
 }
+
+.navbar__item {
+	padding-left: 40px;
+	list-style: none;
+	&:last-of-type {
+		padding-right: 0;
+	}
+	&:first-of-type{
+		padding-left: 0;
+		margin-left: 0;
+	}
+	&:hover{
+		transform: scale(1.1);
+	}
+	&:active:focus{
+		text-decoration: underline;
+	}
+} 
 
 .navbar__link{
 	text-decoration: none;
