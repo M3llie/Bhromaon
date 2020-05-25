@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exam</title> 
-  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/reset.css">
   <link href="/images/favicon.ico" rel="icon" type="image/x-icon">
   <link rel="stylesheet" href="styles/index.css">
-  <link href="https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/709e4c9863.js" crossorigin="anonymous"></script>
 
 
@@ -17,90 +17,138 @@
 
 <div class="border">
   <header class="header">
-    <div class="header__content-box">
-      <h1 class="header__title">Bhromaon</h1>
-      <p class="header__paragraph">Safe Travel Anywhere</p>
-    </div>
-    <form class="form" action="/action_page.php">
-      <input class="input-search" type="text" placeholder="Search Your Travel Destination" name="search">
-      <button class="button-search" type="submit">Search<i class="fa fa-search 2x"></i></button>
-    </form>
-    <div class="header__scroll">
-      <p>Scroll Down</p>
-      <a href="#scroll-down"><i class="fas fa-chevron-down"></i></a>
-    </div>
+    <div class="header__container">
+      <div class="header__wrapper">
+        <div class="header__content-wrapper">
+        <div class="header__content">
+          <h1 class="header__title">Bhromaon</h1>
+          <p class="header__paragraph">Safe Travel Anywhere</p>
+        </div>
+        
+        <form class="header-form" action="#">
+          <input class="header-form__input" type="text" placeholder="Search Your Travel Destination" required minlength="4" name="search">
+
+          <button type="submit" class="header-form__button">Search<i class="fa fa-search 2x"></i></button>
+        </form>
+        </div>
+        <a class="scrolldown" href="#about">
+          Scroll Down
+          <i class="fas fa-chevron-down"></i>
+        </a>
+
+      </div>
+      <div class="navigation__container">
+
+        <div class="navbar">
+            <div class="navbar__item">
+              <h2 class="navbar__logo">Bhromaon</h2>
+            </div>
+            <span class="navbar__item-toggle">
+              <i class="fas fa-bars"></i>
+            </span>
+            <nav class="navbar__items--right">
+              <ul class="navbar__links"> 
+              <li class="navbar__item">
+                <a class="navbar__link" href="#about">Who We Are</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#works">What We Do</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#travel">Travel With Us</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        </div>
+    </div> <!--End wrapper-->
   </header>
 
-  <div class="navbar">
-    <div class="navbar__link">
-       <h2 class="navbar__logo">Bhromaon</h2>
-     </div>
-     <div class="navbar__link-toggle">
-       <i class="fas fa-bars"></i>
-     </div>
-   <nav class="navbar__items--right">
-      <ul class="navbar__links"> 
-      <li class="navbar__link">
-        <a class="link" href="">Who We Are</a>
-      </li>
-      <li class="navbar__link">
-        <a class="link" href="">What We Do</a>
-      </li>
-      <li class="navbar__link">
-        <a class="link" href="">Travel With Us</a>
-      </li>
-      <li class="navbar__link">
-        <a class="link" href="">Contact Us</a>
-      </li>
-    </ul>
-   </nav>
- </div>
 
-  <main class="main-wrapper">
-    <section class="why">
-      <div class="why__content">
-        <h2 class="why__content-title">Why Choose Us</h2>
-        <p class="why__content-p">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee   Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
-        <button class="why__content-button">Explore Places</button>
-      </div>
-     
-      <div class="why__images">
-        <img class="why__images1" src="images/why1.png" alt="Lake House">
  
-        <img class="why__images2" src="images/why2.png" alt="woman standing on mountain top">
+  <main class="main-wrapper">
+    <section class="why" id="about">
+      <div class="why__wrapper">
+        <div class="why__content">
+          <h2 class="title">Why Choose Us</h2>
+          <p class="why__content-p">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee </p>
+          <p class="why__content-p">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
+          <button class="button">Explore Places</button>
+        </div>
+
+        <div class="why__images">
+          <img class="why__images1" src="images/why2.png" alt="Lake House">
+
+          <img class="why__images2" src="images/why1.png" alt="woman standing on mountain top">
+        </div>
       </div>
-
     </section>
 
-    <section class="works">
-    </section>
+  <section class="works" id="works">
+    <img class="works__icons" src="images/works_icons.svg" alt="icons group">
+  </section> 
+  <section class="travel" id="travel">
+    <div class="travel__infobox">
+      <span class="travel__subheading">Spain</span>
+      <h3 class="travel__title">Grand Spain Madrid</h3>
+      <p class="travel__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+      <button class="button">Book Now</button>
+    </div>
+  </section>
+  <section class="travel2">
+    <div class="travel__infobox travel__infobox--left">
+      <span class="travel__subheading">Spain</span>
+      <h3 class="travel__title">Grand Spain Madrid</h3>
+      <p class="travel__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+      <button class="button">Book Now</button>
+    </div>
+  </section>
+  <section class="testimonial" id="contact">
+    <div class="testimonial__wrapper">
+    <h2 class="testimonial__title">What Our  Tourist Say</h2>
+    <div class="testimonial__box">
+      <img src="images/testimonial_author.png" alt="man on mountain top" class="tesmonail__picture">
+      <div class="testimonial__content">
+        <h3 class="testimonial__author">Sam Sumon</h3>
+        <span class="testimonial__text"><i class="fas fa-quote-left"></i> But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</span>
+      </div>
+    </div>
+  </div>
+  </section>
 
   </main>
 
-  <footer class="footer" id="scroll-down">
-    <div class="footer-content">
-      <h2 class="footer-content__title">Bhromaon</h2>
-      <small class="footer-content__text">Safe Travel Anywhere</small>
-    </div>
-    <div class="footer__some">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-linkedin-in"></i>
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-pinterest"></i>
-      </div>
-  </footer>
+<footer class="footer">
+<div class="footer__wrapper">
+
+  <h2 class="footer-content__title">Bhromaon</h2>
+  <small class="footer-content__text">Safe Travel Anywhere</small>
+
+  <div class="footer__some">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-linkedin-in"></i>
+    <i class="fab fa-youtube"></i>
+    <i class="fab fa-pinterest"></i>
+  </div>
+</div>
+</footer> 
 </div>
 
-  <script>
-    function classToggle() {
+<script>
+      function classToggle() {
       const navs = document.querySelectorAll('.navbar__items--right')
       
       navs.forEach(nav => nav.classList.toggle('navbar__toggleShow'));
     }
     
-    document.querySelector('.navbar__link-toggle')
+    document.querySelector('.navbar__item-toggle')
       .addEventListener('click', classToggle);
-  </script>
+      
+</script>
 </body>
 </html>
+
