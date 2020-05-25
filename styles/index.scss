@@ -276,6 +276,7 @@ img{
 .navbar__item {
 	padding-left: 40px;
 	list-style: none;
+	transition: all 0.3s ease 0s;
 	&:last-of-type {
 		padding-right: 0;
 	}
