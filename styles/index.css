@@ -742,6 +742,15 @@ img {
     font-size: 14px;
   }
 
+  .header__title {
+    font-size: 28px;
+    padding-top: 0;
+  }
+
+  .header__paragraph {
+    font-size: 12px;
+  }
+
   .header__container {
     min-height: 68vh;
   }
