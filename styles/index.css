@@ -403,7 +403,7 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/images/house.png);
+  background-image: url(../images/house.png);
   display: flex;
   align-items: center;
 }
@@ -414,7 +414,7 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/images/sunset.png);
+  background-image: url(../images/sunset.png);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -445,7 +445,7 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/images/testimonial.png);
+  background-image: url(../images/testimonial.png);
   display: flex;
   justify-content: center;
   align-items: center;
